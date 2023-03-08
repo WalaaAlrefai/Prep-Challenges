@@ -64,11 +64,11 @@ const sumNums = (arr)=>{
 
 const reverseArray = (arr)=>{
     // write your code here
-    let revArr=[];
-    for(var i=0 ; i< reverseArray.length ; i++){
-        revArr=unshift.reverseArray[i];
+    const revArr=[];
+    for(var i=0 ; i< arr.length ; i++){
+       revArr=unshift.arr[i];
     }
-    return revArr;
+    console.log(revArr);
 }
 // -------------------------------------------------------------------------------------------------------
 
