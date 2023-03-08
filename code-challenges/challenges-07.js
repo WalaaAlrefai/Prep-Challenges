@@ -88,33 +88,35 @@ return (`my name is ${obj.firstName.charAt(0).toUpperCase()+obj.firstName.substr
 
 const cvFormatter = (arr) => {
     // write your code here
-    const newArr=[];
-    let retriveApll={
-        fullName:"",
-        tech:"",
-    };
+    const newArr=[]
+  
     for(let i=0 ; i<arr.length ;i++){
+        let retriveApll={
+            fullName:"",
+            tech:"",
+        }
+        
         if (arr[i].yearsOfExperience > 1){
-            let fullNames="";
-            let techs="";
+     
             if (arr[i].firstName == null){
-                fullNames = arr[i].lastName;
-                techs=arr[i].tech;
+                retriveApll.fullName= arr[i].lastName;
+                retriveApll.tech=arr[i].tech;
             }else if (arr[i].lastName == null){
-            fullNames= arr[i].firstName;
-            techs=arr[i].tech;
+                retriveApll.fullName= arr[i].firstName;
+                retriveApll.tech=arr[i].tech;
             }
             else {
-                fullNames=arr[i].firstName+" "+arr[i].lastName;
-                techs=arr[i].tech;
+                retriveApll.fullName=arr[i].firstName+" "+arr[i].lastName;
+                retriveApll.tech=arr[i].tech;
             }
-            retriveApll.fullName=fullNames;
-            retriveApll.tech=techs;
+            newArr.push(retriveApll);
+             
         }
-        newArr.push(retriveApll);
+        
     }
-    return newArr;
+    return newArr;     
 } 
+
 
 // -------------------------------------------------------------------------------------------------------
 
