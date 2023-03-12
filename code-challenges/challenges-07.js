@@ -143,6 +143,32 @@ const cvFormatter = (arr) => {
 
 const applicationsStatics = (arr) => {
     // write your code here
+    for(let i=0 ; i<arr.length ;i++){
+        if(arr[i].yearsOfExperience<=1){
+            if (arr[i].firstName == null && arr[i].lastName == null){
+                result.rejectedApplicants++;
+               
+            }
+        }else{
+            switch(arr[i].tech){
+                case'JS':
+                result.javaScript_devs++;
+                break;
+                case'python':
+                result.python_devs++;
+                break;
+                case'.Net':
+                result.dotNet_devs++;
+                break;
+                case'Java':
+                result.java_divs++;
+                break ;
+            }
+            result.totalApplicants++;
+        }console.log(result);
+       
+    }
+
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -270,6 +296,12 @@ let data = {
 
 const classesAvg = (data) => {
     // write your code here
+    for(let i=0 ; i<data.length;i++){
+        let sum=0;
+        sum+=data[i].classScores;
+    }
+    let avg=sum/i;
+    return Math.round(avg);
 };
 // -------------------------------------------------------------------------------------------------------
 
