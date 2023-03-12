@@ -28,11 +28,16 @@
 
 const customerAndAge = (obj) => {
   // write your code here
-
-  for(let property in obj)
-  return `Customer Name :${property}, Age :${obj[property]}`
-  
+  const customerArr = [];
+  for (let property in obj) {
+    let name = property;
+    let age = obj[property];
+    let  output= `Customer Name :${name} , Age :${age}`;
+    customerArr.push(output);
+  }
+  return customerArr;
 }
+
 
 // -------------------------------------------------------------------------------------------------------
 
