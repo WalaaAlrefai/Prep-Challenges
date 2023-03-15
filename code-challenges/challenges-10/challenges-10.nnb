@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                "let birthdayCakeCandles(vector<int> candles) {\n    let height=1; \n    \n   for (let i=0; i<candles.size(); i++)\n   {\n       for (let b=0; b<candles.length; b++)\n       {   \n           if(b!=i && candles[b]==candles[i])\n           {height++;}\n                   \n       b++;          \n       }          \n   }\n   return height; \n}"
+                "function birthdayCakeCandles(candles) {\n    let height=1; \n    let count=0;\n    for (let i=0; i<candles.length; i++)\n    {\n        for (count=0; count<candles.length; b++)\n        {   \n            if(count!=i && candles[count]===candles[i])\n            {height++;}\n                    \n        count++;          \n        }          \n    }\n    return height; \n }"
             ],
             "outputs": []
         },
