@@ -43,10 +43,11 @@ const arrInc = (arr) => {
 // 
 const roundDecimals = (arr) => {
     // write your code here
-    const roundArr=[];
-    arr.forEach (element =>{roundArr.push(round(element))});
-    return roundArr;
+    const roundedArr=[];
+    arr.forEach(element =>{roundedArr.push(Math.round(element))});
+    return roundedArr;
 }
+
 
 // -------------------------------------------------------------------------------------------------------
 
@@ -116,15 +117,33 @@ const roundDecimals = (arr) => {
 
 const employeesBonus = (arr) => {
     // write your code here
-    let newArr=[];
-    for(let i=0;i<arr.length;i++){
-        if (arr[i].workHours>8){
-        arr.forEach(element=>{newArr.push(arr[i].salary+100)})
-    }else{
-        arr.forEach(element=>{newArr.push(arr[i].salary+50)})
+    let arr1=[];
+  for(let i=0;i<arr.length;i++){
+    let employeeWithBonus={
+        name:"",
+        section:"",
+        workHours:0,
+        salary:0,
     }
-    }
+      if(arr[i].workHours > 8){
+        employeeWithBonus.name= arr[i].name;
+        employeeWithBonus.section=arr[i].section;
+        employeeWithBonus.workHours=arr[i].workHours;
+        employeeWithBonus.salary=`${parseInt(arr[i].salary)+100}$`;
+      
+       
+      }else{
+      
+        employeeWithBonus.name= arr[i].name;
+        employeeWithBonus.section=arr[i].section;
+        employeeWithBonus.workHours=arr[i].workHours;
+        employeeWithBonus.salary=`${parseInt(arr[i].salary)+50}$`;
+      }
+      arr1.push(employeeWithBonus);
+  }
+  return arr1;
 }
+
 
 // -------------------------------------------------------------------------------------------------------
 
