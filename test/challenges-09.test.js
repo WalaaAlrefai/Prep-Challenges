@@ -5,7 +5,7 @@ const {
   roundDecimals,
   employeesBonus,
   mostExpensive,
-} = require("../code-challenges/challenges-09");
+} =require("../code-challenges/challenges-09");
 const data = [
   {
     name: "Robert",

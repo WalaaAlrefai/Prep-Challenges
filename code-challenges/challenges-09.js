@@ -42,8 +42,8 @@ const arrInc = (arr) => {
 // 
 const roundDecimals = (arr) => {
     // write your code here
-    const decimalArr=[];
-    arr.forEach (element =>{decimalArr.push(round(element))})
+    const roundedArr=[];
+    arr.forEach(element =>{roundedArr.push(Math.round(element))})
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -113,6 +113,18 @@ const roundDecimals = (arr) => {
 
 const employeesBonus = (arr) => {
     // write your code here
+      let total=0;
+      let arr1=[];
+    for(let i=0;i<arr.length;i++){
+        if(arr[i].workHours > 8){
+        
+        total=arr[i].salary+100;
+         
+        }else{
+        total=arr[i].salary+50;
+        }
+        arr1.push(total);
+    }
 }
 // -------------------------------------------------------------------------------------------------------
 
