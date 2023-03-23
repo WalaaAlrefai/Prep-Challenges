@@ -71,12 +71,39 @@ const oddFiltration = (arr) => {
 
 const cvsFiltration = (arr) => {
 
-    const result =arr.filter((object)=>object.yearsOfExperience >4);
-    console.log("jbjhhggcxfddfghccvbcgh",result)
-    return(result);
+//     let newArr = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i].yearsOfExperience > 4) {
+//             if (arr[i].LastName == null) {
+//                 newArr.push({
+//                     fullName: arr[i].firstName,
+//                     tech: arr[i].tech
+//                 })
+//             } else {
+//                 newArr.push({
+//                     fullName: arr[i].firstName + " " + arr[i].LastName,
+//                     tech: arr[i].tech
+//                 })
+//             }
+//         }
+//     }
+//     const result =newArr.filter((object)=> object.tech=="JS");
+//     return result;
+// } 
+const result =arr.filter((object)=>object.yearsOfExperience >4 && object.tech=="JS");
 
-
+let newArr=[];
+for(let i=0;i<result.length;i++){
+     newArr.push({
+            fullName: arr[i].firstName+" "+arr[i].LastName,
+            tech: arr[i].tech
+        })
 }
+return newArr;
+}
+   
+    
+
 
 // Challenge 03:
 // optional:
@@ -89,10 +116,16 @@ const cvsFiltration = (arr) => {
 
 const vowelsFiltration = (arr) => {
 
-
-
+// let arr2=[]
+   
+const newArr=arr.filter((element)=>element.match(/[aeiou]/ig)==null);
+return newArr;
 
 }
+
+
+
+
 const skillComparison = (arr1, arr2) => {
     // write your code here
 }

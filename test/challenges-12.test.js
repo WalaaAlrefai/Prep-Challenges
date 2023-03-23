@@ -4,7 +4,7 @@ const {
   cvsFiltration,
   vowelsFiltration,
   skillComparison,
-} = require("../code-challenges/challenges-12");
+}= require("../code-challenges/challenges-12");
 
 describe("Challenge12-01", () => {
   test("Get_odd_numbers", () => {
@@ -84,7 +84,7 @@ describe("Challenge12-02", () => {
       },
     ];
 
-    // expect(cvsFiltration(cvs1)).toStrictEqual(res1);
+    expect(cvsFiltration(cvs1)).toStrictEqual(res1);
     expect(cvsFiltration(cvs2)).toStrictEqual(res2);
   });
 });
