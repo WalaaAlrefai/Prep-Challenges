@@ -10,7 +10,7 @@
 // Required:
 // 
 // Given an array of values use filter to extract odd values.
-//  
+//
 // Input:
 // [20, 54, 89, 41, 2, 31, 111, 15, 0, 31, 200] 
 // Output:
@@ -18,13 +18,11 @@
 // 
 
 const oddFiltration = (arr) => {
-    // write your code here
     const result =arr.filter(element=>element%2 !== 0);
     return result;
-}
-// -------------------------------------------------------------------------------------------------------
 
-// -------------------------------------------------------------------------------------------------------
+}
+
 // Challenge 02:
 // optional:
 // 
@@ -72,38 +70,14 @@ const oddFiltration = (arr) => {
 //  2- If one of the names is null dont add it to the full name
 
 const cvsFiltration = (arr) => {
-    // write your code here   
-//     let newArr=[];
-//     for (let i = 0; i < arr.length; i++) {
-//         if (arr[i].yearsOfExperience > 1) {
-//             if (arr[i].lastName == null) {
-//                 newArr.push({
-//                     fullName: arr[i].firstName,
-//                     tech: arr[i].tech
-//                 })
-//             } else {
-//                 newArr.push({
-//                     fullName: arr[i].firstName+" "+arr[i].lastName,
-//                     tech: arr[i].tech
-//                 })
-//             }
-//         }
-//     }
-//     return newArr;
-// }
 
+    const result =arr.filter((object)=>object.yearsOfExperience >4);
+    console.log("jbjhhggcxfddfghccvbcgh",result)
+    return(result);
 
-     const result =arr.filter((object)=>{object.yearsOfExperience >4 && object.tech=="JS" });
-         return result;
 
 }
-        
-    
 
-
-// -------------------------------------------------------------------------------------------------------
-
-// -------------------------------------------------------------------------------------------------------
 // Challenge 03:
 // optional:
 // 
@@ -114,34 +88,11 @@ const cvsFiltration = (arr) => {
 // 
 
 const vowelsFiltration = (arr) => {
-    // write your code here
-    for(let i=0;i<arr.length;i++){
 
-    const words=arr.filter(string=>string.match(/![aeiou]/gi));
-    return words;
 
-    } 
-   
-} 
-// -------------------------------------------------------------------------------------------------------
 
-// -------------------------------------------------------------------------------------------------------
-// Challenge 04:
-// Optional:
-// 
-// An employer wants to compare between his employees skills, write a function that will extract the differences 
-// between the employees skills.
 
-// Input:
-// first_Employee = [C, C#, Java, Angular, PHP]
-// sec_Employee = [C#, .Net, JavaScript, React, Angular]
-
-// Output:
-// result = [C, Java, PHP, .Net, JavaScript, React]
-
-// Hint:
-// - the 'include' method can help you, read about it.
-
+}
 const skillComparison = (arr1, arr2) => {
     // write your code here
 }
@@ -149,4 +100,3 @@ const skillComparison = (arr1, arr2) => {
 
 
 module.exports = { oddFiltration, cvsFiltration, vowelsFiltration, skillComparison };
-
