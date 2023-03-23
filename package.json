@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "pull-challenge": "`which bash` ./bin/pull-challenge.sh",
+    "pull-challenge": "which bash ./bin/pull-challenge.sh",
     "test": "jest"
   },
   "repository": {
@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/LTUC/prep-challenges#readme",
   "dependencies": {
-    "jest": "^27.4.7",
-    "jist": "^1.0.6"
+    "jest": "^27.4.7"
   }
 }
