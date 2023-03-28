@@ -115,8 +115,6 @@ return newArr;
 // 
 
 const vowelsFiltration = (arr) => {
-
-// let arr2=[]
    
 const newArr=arr.filter((element)=>element.match(/[aeiou]/ig)==null);
 return newArr;
